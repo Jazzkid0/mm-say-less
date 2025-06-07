@@ -5,18 +5,18 @@
 
 # Unique ID of this mod. Pick something long enough that it'll never be the same as any other mod.
 # The name displayed in the mod management menu is separate from this so this doesn't need to be human readable.
-id = "mm_recomp_mod_template"
+id = "mm_recomp_say_less"
 
 # Version of this mod.
 version = "1.0.0"
 
 # The name that will show up for this mod in the mod menu. This should be human readable.
-display_name = "Always Spin Attack"
+display_name = "Say Less (BETA)"
 
 # The description that will show up when this mod is displayed in the mod menu. This should be human readable.
 description =  """
-This is an example mod for Majora's Mask: Recompiled that can be used as a template for creating mods. \
-When this mod is enabled, you will always perform a quickspin when swinging your sword.
+BETA VERSION \
+Makes people say less, duh.
 
 For more details, see https://github.com/Zelda64Recomp/MMRecompModTemplate."""
 
@@ -25,7 +25,7 @@ For more details, see https://github.com/Zelda64Recomp/MMRecompModTemplate."""
 short_description = "Always perform a quickspin when swinging your sword."
 
 # Authors of this mod.
-authors = [ "Your name here" ]
+authors = [ "Jazzkid" ]
 
 # ID of the target recomp game.
 game_id = "mm"
@@ -35,8 +35,7 @@ minimum_recomp_version = "1.2.0"
 
 # Dependency mods. Each entry is the mod's ID and then an optional minimum version of the dependency mod.
 dependencies = [
-# Example dependency:
-#    "modname:1.0.0"
+    "MM_EZ_Text_Replacer_API:2.0.1"
 ]
 
 # Native libraries (e.g. DLLs) and the functions they export.
@@ -52,14 +51,14 @@ native_libraries = [
 elf_path = "build/mod.elf"
 
 # Output mod filename.
-mod_filename = "mm_recomp_mod_template"
+mod_filename = "mm_recomp_say_less"
 
 # Reference symbol files.
 func_reference_syms_file = "Zelda64RecompSyms/mm.us.rev1.syms.toml"
 data_reference_syms_files = [ "Zelda64RecompSyms/mm.us.rev1.datasyms.toml", "Zelda64RecompSyms/mm.us.rev1.datasyms_static.toml" ]
 
 # Additional files to include in the mod.
-additional_files = [ ]
+additional_files = [ "thumb.dds" ]
 
 [[manifest.config_options]]
 id = "enum_option"
