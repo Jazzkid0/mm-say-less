@@ -358,8 +358,8 @@ RECOMP_PATCH void EnGinkoMan_WaitForDialogueInput(EnGinkoMan* this, PlayState* p
                 }
             } else {
                 Audio_PlaySfx_MessageCancel();
-                Message_StartTextbox(play, 0x47C, &this->actor);
-                this->curTextId = 0x47C; // cancel withdrawl
+                Message_StartTextbox(play, 0x468, &this->actor);
+                this->curTextId = 0x468; // deposit, withdraw or exit
             }
             break;
 
